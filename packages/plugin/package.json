@@ -1,0 +1,27 @@
+{
+  "name": "plugin",
+  "type": "module",
+  "version": "0.1.2",
+  "private": true,
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --config vite.production.config.ts",
+    "build:firefox": "vite build --config vite.production.config.ts -- --firefox",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "compressorjs": "^1.2.1"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "2.0.0-beta.26",
+    "@types/webextension-polyfill": "^0.10.7",
+    "@web-archive/shared": "workspace:*",
+    "webext-bridge": "^6.0.1",
+    "webextension-polyfill": "^0.12.0"
+  }
+}
